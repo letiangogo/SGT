@@ -4,7 +4,7 @@
 # Numerical Validation for Static Field Equation Self-Consistency Checks
 # 空能引力理论（SGT）| 静态场方程自洽性检验 数值验证代码
 #
-# Version: 1.0.1
+# Version: 1.0.2
 # Author: Li Zhijun / 李志军
 # Email: lizhijun@yuantai.ac.cn | zhijundi@qq.com
 # ORCID: https://orcid.org/0009-0004-8456-7107
@@ -16,6 +16,7 @@
 # 3. Numerical Well-Posedness Tests (A.5.2–A.5.6)
 # 4. Cosmological Background Order Estimation (A.6.3)
 # ==============================================================================
+
 
 import numpy as np
 
@@ -70,7 +71,6 @@ def solve_radial_ode(m_tot_kg, r_max_kpc=100.0, n_points=1000):
     # Step inward from the boundary (using the conserved quantity r^2 * g^2 = const)
     C2 = C_analytic**2
     for i in range(len(r)-2, -1, -1):
-        # In the source-free region, r^2 g^2 = C2 holds strictly, so we can assign directly
         g[i] = np.sqrt(C2) / r[i]
     
     v = np.sqrt(g * r)          # centrifugal equilibrium v^2/r = g
@@ -144,7 +144,6 @@ def test_stability():
     }
     prev_v = None
     for name, g_init in modes.items():
-        # Inward relaxation iteration (here the conservation relation directly replaces iteration to verify the final value)
         g = g_init.copy()
         g[-1] = C_analytic / r[-1]
         C2 = C_analytic**2
@@ -188,7 +187,6 @@ def test_stability():
         C2 = C_analytic**2
         for i in range(len(r)-2, -1, -1):
             g[i] = np.sqrt(C2) / r[i]
-        # Compare the velocity at 30 kpc
         idx_30 = np.argmin(np.abs(r - 30.0 * KPC))
         v_30 = np.sqrt(g[idx_30] * r[idx_30]) / 1000.0
         diff_str = "-"
@@ -202,7 +200,7 @@ def test_stability():
     print("A.5.5  Iterative Residual Decay (relaxation iteration example)")
     print("="*60)
     r = np.logspace(np.log10(0.1 * KPC), np.log10(50.0 * KPC), 500)
-    g = np.full_like(r, 1e-10)  # initial guess
+    g = np.full_like(r, 1e-10)
     g[-1] = C_analytic / r[-1]
     print(f"{'Iteration':<10} {'Residual':<15}")
     print("-"*25)
@@ -233,11 +231,14 @@ def test_stability():
 # ============================================================
 def test_cosmology():
     """Compute the order-of-magnitude of the equivalent dark energy density"""
+    # The combination κ a0 / c^2 yields a quantity with dimensions of frequency squared [T^{-2}],
+    # which corresponds to an effective H^2 term in the Friedmann equation.
     H2_sgt = KAPPA * A0 / C_LIGHT**2
+    # Equivalent energy density estimated via ρ = 3 H^2 / (8πG).
     rho_sgt = 3.0 * H2_sgt / (8.0 * np.pi * G)
     rho_obs = 7.0e-27   # Planck 2018
     print("\n" + "="*60)
-    print("A.6.3  Cosmological Equivalent Acceleration Term Order-of-Magnitude Estimate")
+    print("A.6.3  Cosmological Equivalent Dark Energy Term Order-of-Magnitude Estimate")
     print("="*60)
     print(f"  H_SGT^2 = κ a0 / c^2 = {H2_sgt:.3e} s^-2")
     print(f"  ρ_SGT  = 3 H_SGT^2 / (8πG) = {rho_sgt:.3e} kg/m^3")
@@ -253,7 +254,7 @@ if __name__ == "__main__":
     np.set_printoptions(precision=3, suppress=True)
     print("=" * 60)
     print("  Spatial Pressure Gravitational Theory (SGT) Self-Consistency Test Numerical Code")
-    print("  Version 1.0.0")
+    print("  Version 1.0.2")
     print("=" * 60)
 
     test_btfr()
