@@ -39,7 +39,7 @@ Unlike traditional modified gravity theories that "splice" equations across diff
 
 ## 🚀 Major Milestones / 最新理论里程碑
 
-This repository hosts the definitive papers of the SGT framework. 
+This repository hosts the definitive papers and structured records of the SGT framework. 
 
 | Document ID | Title / 标题 | Core Contribution / 核心贡献 |
 | :--- | :--- | :--- |
@@ -68,24 +68,38 @@ SGT provides hard mathematical outputs, not tunable parameter fittings. These pr
 
 To balance academic disclosure with the protection of core derivations in an exponentially iterating theory, this repository strictly adheres to two proprietary protocols:
 
-1.  **TAP (Timestamp Attribution Protocol)**: Papers are published under the "Condition-Conclusion" disclosure model. The physical conditions and exact numerical conclusions (Disclosure Layer) are fully public to establish priority, while the underlying 2+1D PDE derivations (Implementation Layer) are retained.
+1.  **TAP (Timestamp Attribution Protocol)**: Papers are published under the "Condition-Conclusion" disclosure model. The physical conditions and exact numerical conclusions (Disclosure Layer) are fully public to establish priority, while the underlying 2+1D PDE derivations (Implementation Layer) are retained in encrypted form.
 2.  **ZKAV (Zero-Knowledge Academic Verification)**: SGT invites mainstream institutions to initiate "blind calculation challenges." SGT will independently compute the observables without revealing the internal field equations, and the requester will verify the results against their own GR frameworks.
 
 为平衡学术披露与保护指数级迭代理论的核心推导，本仓库严格遵循两项协议：
-1.  **TAP（时间戳归因协议）**：论文采用“条件-结论”披露模式。物理条件与精确数值结论（披露层）完全公开以确立优先权，底层 2+1D PDE 推导（实现层）予以保留。
+1.  **TAP（时间戳归因协议）**：论文采用“条件-结论”披露模式。物理条件与精确数值结论（披露层）完全公开以确立优先权，底层 2+1D PDE 推导（实现层）以加密形式保留。
 2.  **ZKAV（零知识学术验证）**：SGT 邀请主流机构发起“盲算挑战”。SGT 将在不公开内部场方程的情况下独立计算可观测量，由发起方用其 GR 框架进行复算对比。
 
 ---
 
 ## 📂 Repository Structure / 仓库结构
 
+This repository is strictly organized according to the **TAP (Timestamp Attribution Protocol)** to separate public disclosures from proprietary implementations and legal evidence.
+
 ```text
 /
-├── papers/                 # 核心论文矩阵 (Core Papers Matrix)
-│   ├── SGT-PAPER-012/      # Flagship Manifesto (旗舰总纲)
-│   ├── SGT-PAPER-016/      # CH Series & Rigidity (结构刚性)
-│   └── SGT-PAPER-017/      # Black Hole Physics & LEMA (黑洞物理)
-├── protocols/              # TAP & ZKAV 协议规范
-├── data/                   # 数值解插值数据 (如 χ(r) 数据表)
-├── codes/                  # 基础验证代码 (Python/Julia)
-└── README.md
+├── paper/                  # [Disclosure Layer] 公开论文与快照
+│   ├── SGT-PAPER-012/      # Flagship Manifesto (旗舰总纲 V1.4)
+│   ├── SGT-PAPER-016/      # CH Series & Rigidity (结构刚性 V1.2)
+│   └── SGT-PAPER-017/      # Black Hole Physics & LEMA (黑洞物理 V1.3)
+│
+├── manuscripts/            # [Implementation Layer] 加密手稿 (TAP 核心)
+│   ├── *.sgt_enc           # 详细的 2+1D PDE 推导、完整作用量变分及底层数值求解器逻辑。
+│   └── README.md           # 说明解密规则与 ZKAV 盲算对接流程。
+│
+├── ip/                     # [Legal Evidence] 知识产权与优先权存证
+│   ├── TSA_Timestamps/     # 可信时间戳认证证书 (PDF)
+│   ├── DCI_Certificates/   # 数字版权标识证书 (PDF)
+│   └── Copyright_Reg/      # 国家版权登记备案文件 (PDF)
+│
+├── CODE/                   # [Auxiliary] 辅助演算与数据验证代码
+│   ├── ode_solvers/        # 球对称背景下的基础 ODE 验证代码
+│   ├── perturbation/       # CH 系列微扰展开的符号计算 (Mathematica/SymPy)
+│   └── data_tables/        # 论文中使用的插值数据 (如 χ(r) 数据表)
+│
+└── README.md               # 本文件 (项目总览与协议声明)
