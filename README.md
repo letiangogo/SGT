@@ -1,7 +1,7 @@
 # Spatial-Pressure Gravitational Theory (SGT)
 ### 空能引力理论 (Spatial-Pressure Gravitational Theory)
 
-**Status**: Active & Exponentially Iterating | **Protocol**: TAP & ZKAV Compliant  
+**Status**: Active & Exponentially Iterating | **Protocol**: IPSTP & ZKAV Compliant  
 **Author**: Li Zhijun (李志军)  
 **ORCID**: [0009-0004-8456-7107](https://orcid.org/0009-0004-8456-7107)  
 **Website**: [https://sgt.ac.cn](https://sgt.ac.cn)  
@@ -23,83 +23,85 @@ SGT 在弱/中场不修改广义相对论（GR）的数学形式，而是为其�
 
 ## 🧬 Core Ontology / 核心本体论
 
-Unlike traditional modified gravity theories that "splice" equations across different scales, SGT's multi-scale behavior is an **intrinsic emergence** of the medium's elastic properties.
-
 *   **The Medium & Order Parameter**: The state of the medium is governed by the stretching parameter $f$ and the stiffness order parameter $\chi(f) = \frac{1-f}{1+f^2}$.
-*   **Effective Gravitational Modulation**: The gravitational coupling is dynamically screened by the medium: 
-    $$G_{\text{eff}}(r) = G \cdot \chi(r)$$
-*   **Non-Emptiability (The Cosmic Censorship of SGT)**: The medium cannot be infinitely compressed. The constraint $f \le 1$ guarantees $\chi \ge 0$, physically truncating singularities where GR fails.
+*   **Effective Gravitational Modulation**: $G_{\text{eff}}(r) = G \cdot \chi(r)$.
+*   **Non-Emptiability**: The constraint $f \le 1$ guarantees $\chi \ge 0$, physically truncating singularities where GR fails.
 
-与传统修正引力理论在不同尺度上“拼接”方程不同，SGT 的多尺度行为是介质弹性属性的**内禀涌现**。
 *   **介质与序参量**：介质状态由撑开度 $f$ 和刚度序参量 $\chi(f) = \frac{1-f}{1+f^2}$ 控制。
-*   **有效引力调制**：引力耦合被介质动态屏蔽：$G_{\text{eff}}(r) = G \cdot \chi(r)$。
-*   **不可排空性（SGT的宇宙监督假设）**：介质不能被无限压缩。约束 $f \le 1$ 保证了 $\chi \ge 0$，在物理上截断了 GR 失效处的奇点。
+*   **有效引力调制**：$G_{\text{eff}}(r) = G \cdot \chi(r)$。
+*   **不可排空性**：约束 $f \le 1$ 保证了 $\chi \ge 0$，在物理上截断了 GR 失效处的奇点。
 
 ---
 
 ## 🚀 Major Milestones / 最新理论里程碑
 
-This repository hosts the definitive papers and structured records of the SGT framework. 
-
 | Document ID | Title / 标题 | Core Contribution / 核心贡献 |
 | :--- | :--- | :--- |
-| **SGT-012** | **Flagship Manifesto** (旗舰总纲) | Establishes the medium ontology, Non-Emptiability theorems, and the cosmological singularity resolution ($H(0) < \infty$). |
+| **SGT-012** | **Flagship Manifesto** (旗舰总纲) | Establishes the medium ontology, Non-Emptiability theorems, and cosmological singularity resolution. |
 | **SGT-016** | **CH Series & Rigidity Hierarchy** (结构刚性) | Rigorously proves a 3-tier rigidity hierarchy under metric perturbations: Horizon ($\varepsilon^0$), ISCO ($\varepsilon^2$), Photon Sphere ($\varepsilon^1$). |
-| **SGT-017** | **Black Hole Physics & LEMA** (黑洞物理) | Proposes the Local Effective Mass Approximation (LEMA). Discovers the **86% suppression of ISCO rotational inward shift** due to $G_{\text{eff}}$ negative feedback. |
+| **SGT-017** | **Black Hole Physics & LEMA** (黑洞物理) | Proposes LEMA. Discovers the **86% suppression of ISCO rotational inward shift** due to $G_{\text{eff}}$ negative feedback. |
 
 ---
 
 ## 🔭 Unique Falsifiable Predictions / 独家硬核预言
 
-SGT provides hard mathematical outputs, not tunable parameter fittings. These predictions directly challenge GR and will be tested by upcoming observatories (Athena, LISA, ET, XRISM).
-
-1.  **ISCO Inward Shift (Static)**: $r_{\text{ISCO}} = 4.23M$ (GR predicts $6.00M$).
-    *(静态最内层稳定圆轨道内移：4.23M，GR为6.00M)*
-2.  **Rotational Suppression (86%)**: The first-order rotational inward shift of the ISCO is suppressed by 86% ($C_1^{\text{SGT}} = -0.466$ vs $C_1^{\text{Kerr}} = -3.266$) due to the self-regulating negative feedback of the medium.
-    *(旋转抑制效应：受介质自调节负反馈影响，ISCO的一阶旋转内移响应被抑制 86%)*
-3.  **Gravitational Wave Echoes**: GWs propagating in the strong field experience a variable speed $c_{\text{GW}} = c\sqrt{\chi}$, reflecting off the "frozen front" and producing echoes with a delay of $\sim 14.3M$.
-    *(引力波回声：强场中引力波速受 $\chi$ 调制，在“冻结锋面”反射产生时延约 14.3M 的回声)*
-4.  **Cosmological Singularity Resolution**: The Big Bang singularity is replaced by a finite initial Hubble parameter $H(0) = 1.023 \times 10^{-1}$ (in geometric units).
-    *(宇宙学奇点消除：大爆炸奇点被有限的初始哈勃常数取代)*
+1.  **ISCO Inward Shift (Static)**: $r_{\text{ISCO}} = 4.23M$ (GR: $6.00M$).
+2.  **Rotational Suppression (86%)**: $C_1^{\text{SGT}} = -0.466$ vs $C_1^{\text{Kerr}} = -3.266$.
+3.  **Gravitational Wave Echoes**: Delay $\sim 14.3M$ due to reflection at the "frozen front".
+4.  **Cosmological Singularity Resolution**: Finite initial Hubble parameter $H(0) = 1.023 \times 10^{-1}$.
 
 ---
 
 ## 🛡️ Methodology Protocols / 方法论协议
 
-To balance academic disclosure with the protection of core derivations in an exponentially iterating theory, this repository strictly adheres to two proprietary protocols:
+To balance academic disclosure with the strict protection of core derivations, this repository operates under two proprietary protocols:
 
-1.  **TAP (Timestamp Attribution Protocol)**: Papers are published under the "Condition-Conclusion" disclosure model. The physical conditions and exact numerical conclusions (Disclosure Layer) are fully public to establish priority, while the underlying 2+1D PDE derivations (Implementation Layer) are retained in encrypted form.
-2.  **ZKAV (Zero-Knowledge Academic Verification)**: SGT invites mainstream institutions to initiate "blind calculation challenges." SGT will independently compute the observables without revealing the internal field equations, and the requester will verify the results against their own GR frameworks.
+### 1. IPSTP (Intellectual Property Spatiotemporal Proof Protocol)
+SGT papers are published under the **IPSTP framework**, transforming theoretical releases into a **judicially reviewable spatiotemporal evidence chain**. 
+*   **Layer A (Fact Disclosure)**: Fully public (Conditions $C$ and Conclusions $Y$). Establishes the verifiable public fact occurrence point.
+*   **Layer B (Generation Constraints)**: Described but not implemented publicly (Convergence rules, invariants). Ensures logical reproducibility without exposing algorithms.
+*   **Layer C (Implementation)**: Fully retained. Submitted only for judicial/arbitration review if disputes arise.
+*   *Legal Effect*: Once $C+Y$ is archived, the "condition space" is contaminated (Prior Art established). Any subsequent similar conclusions trigger the **Evidentiary Inference State**, shifting the burden of proof to the latercomer.
 
-为平衡学术披露与保护指数级迭代理论的核心推导，本仓库严格遵循两项协议：
-1.  **TAP（时间戳归因协议）**：论文采用“条件-结论”披露模式。物理条件与精确数值结论（披露层）完全公开以确立优先权，底层 2+1D PDE 推导（实现层）以加密形式保留。
-2.  **ZKAV（零知识学术验证）**：SGT 邀请主流机构发起“盲算挑战”。SGT 将在不公开内部场方程的情况下独立计算可观测量，由发起方用其 GR 框架进行复算对比。
+### 2. ZKAV (Zero-Knowledge Academic Verification)
+SGT invites mainstream institutions to initiate "blind calculation challenges." SGT independently computes observables without revealing internal field equations, allowing the requester to verify results against their own GR frameworks.
+
+为平衡学术披露与核心推导保护，本仓库遵循两项协议：
+### 1. IPSTP（知识产权时空证明协议）
+将理论发布转化为**可司法审查的时空证据链**。
+*   **Layer A（事实披露层）**：完全公开（条件 $C$ 与结论 $Y$），确立可验证公开事实发生点。
+*   **Layer B（生成约束层）**：描述但不公开实现（收敛规则、不变量），确保逻辑可审查但不暴露算法。
+*   **Layer C（实现层）**：完全保留，仅在司法/仲裁争议时定向提交。
+*   *法律效力*：一旦 $C+Y$ 存档，条件空间即被“污染”（Prior Art 成立）。后续相似结论将触发**证据推断状态**，举证责任倒置给后来者。
+
+### 2. ZKAV（零知识学术验证）
+邀请主流机构发起“盲算挑战”，在不公开底层方程的前提下证明预测能力。
 
 ---
 
 ## 📂 Repository Structure / 仓库结构
 
-This repository is strictly organized according to the **TAP (Timestamp Attribution Protocol)** to separate public disclosures from proprietary implementations and legal evidence.
+The repository is strictly structured according to the **IPSTP** evidence chain requirements.
 
 ```text
 /
-├── paper/                  # [Disclosure Layer] 公开论文与快照
-│   ├── SGT-PAPER-012/      # Flagship Manifesto (旗舰总纲 V1.4)
-│   ├── SGT-PAPER-016/      # CH Series & Rigidity (结构刚性 V1.2)
-│   └── SGT-PAPER-017/      # Black Hole Physics & LEMA (黑洞物理 V1.3)
+├── paper/                  # [Layer A: Fact Disclosure] 公开论文与快照
+│   ├── SGT-PAPER-012/      # Flagship Manifesto (旗舰总纲)
+│   ├── SGT-PAPER-016/      # CH Series & Rigidity (结构刚性)
+│   └── SGT-PAPER-017/      # Black Hole Physics & LEMA (黑洞物理)
 │
-├── manuscripts/            # [Implementation Layer] 加密手稿 (TAP 核心)
-│   ├── *.sgt_enc           # 详细的 2+1D PDE 推导、完整作用量变分及底层数值求解器逻辑。
-│   └── README.md           # 说明解密规则与 ZKAV 盲算对接流程。
+├── manuscripts/            # [Layer B & C: Constraints & Implementation] 
+│   ├── constraints/        # [Layer B] 生成约束描述（收敛条件、不变量结构、逻辑框架）
+│   ├── core_logic/         # [Layer C] 核心算法与 2+1D PDE 求解器（加密/受控访问）
+│   └── README.md           # IPSTP Layer B/C 访问与解密规则说明
 │
-├── ip/                     # [Legal Evidence] 知识产权与优先权存证
-│   ├── TSA_Timestamps/     # 可信时间戳认证证书 (PDF)
-│   ├── DCI_Certificates/   # 数字版权标识证书 (PDF)
+├── ip/                     # [Spatiotemporal Anchors] 时空锚点与司法证据
+│   ├── TSA_Timestamps/     # 可信时间戳认证证书 (PDF) - 外部时间锚定
+│   ├── DCI_Certificates/   # 数字版权标识证书 (PDF) - 内容哈希不可篡改证明
 │   └── Copyright_Reg/      # 国家版权登记备案文件 (PDF)
 │
 ├── CODE/                   # [Auxiliary] 辅助演算与数据验证代码
 │   ├── ode_solvers/        # 球对称背景下的基础 ODE 验证代码
-│   ├── perturbation/       # CH 系列微扰展开的符号计算 (Mathematica/SymPy)
 │   └── data_tables/        # 论文中使用的插值数据 (如 χ(r) 数据表)
 │
-└── README.md               # 本文件 (项目总览与协议声明)
+└── README.md               # 本文件 (项目总览与 IPSTP 协议声明)
