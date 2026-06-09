@@ -11,8 +11,19 @@ This directory contains the **Layer C encrypted archive** of the Spatial Pressur
 | 文件名 | 说明 |
 | File | Description |
 |------|------|
-| `SGT-Verification-Layer-Lock-File-v1.0.rar` | SGT 理论核心技术资产加密存档包，内含实现层（Layer C）完整清单与验算路径。已通过 SHA-256 哈希固化并提交可信时间戳（TSA）锚定，文件受密码保护，仅在法定调取情形下解密。 |
-|  | Encrypted archive of SGT core technical assets, containing the complete Layer C inventory and verification paths. SHA-256 hashed and TSA timestamped. Password-protected; decryption only under legally prescribed circumstances. |
+| `SGT-Verification-Layer-Lock-File-v1.0.rar` | **（历史版本）** SGT 理论核心技术资产加密存档包，对应宪法基准 V3.10.0 及早期理论成果。SHA-256 及时间戳信息见该版本对应的公开锚点文件。 |
+|  | **(Historical version)** Encrypted archive of SGT core technical assets, corresponding to Constitution V3.10.0 and earlier theoretical results. See the public anchor document of that version for SHA-256 and timestamp details. |
+| `SGT-Verification-Layer-Lock-File-v2.0.rar` | **（当前版本）** SGT 理论核心技术资产加密存档包，内含实现层（Layer C）完整清单与验算路径。已通过 SHA-256 哈希固化并提交可信时间戳（TSA）锚定，文件受密码保护，仅在法定调取情形下解密。 |
+|  | **(Current version)** Encrypted archive of SGT core technical assets, containing the complete Layer C inventory and verification paths. SHA-256 hashed and TSA timestamped. Password-protected; decryption only under legally prescribed circumstances. |
+
+### 当前版本验证信息 | Current Version Verification Info
+
+| 项目 | 内容 |
+|------|------|
+| **文件名** | `SGT-Verification-Layer-Lock-File-v2.0.rar` |
+| **SHA-256** | `4a354a8456cadc88d4f6ff405dd27e135530a9161b9120b2c02179e1a44bd3c1` |
+| **TSA 证书编号** | `TSA-01-20260609727334209` |
+| **时间戳签发时间** | 2026-06-09 08:34:41 (UTC+8) |
 
 ---
 
