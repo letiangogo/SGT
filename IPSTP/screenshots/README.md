@@ -4,3 +4,6 @@
 
 ## English
 This folder stores screenshots of pages related to SGT from overseas search engines and third-party platforms. All screenshots are uploaded to IPFS for decentralized permanent storage, and the original web pages are fully archived on dedicated snapshot platforms. Supported by the IPSTP framework, all files are well organized, tamper-proof and traceable for long-term preservation.
+
+## IPFS
+https://bafybeidpmas5vkqik4npjdwopo2ydmxlyghhyvncpk65v2mfzjpugq5bza.ipfs.dweb.link?filename=SGT_WEB.2026-06-10.rar
